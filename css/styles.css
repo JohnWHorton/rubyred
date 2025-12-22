@@ -1,0 +1,253 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.6;
+  background-color: pink;
+  font-family: "Arial", sans-serif;
+
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+ul a {
+  color: rgb(150, 17, 17);
+}
+
+.mybg {
+  min-height: 100vh;
+  background-image: url("../images/rrgemini.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Optional: fixed parallax-style background */
+  /* background-attachment: fixed; */
+}
+
+.menu {
+  max-width: 300px;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: pink;
+  color: #fc0000;
+  padding: 20px 20px 20px 20px;
+}
+
+h1 {
+  color: #b22222;
+}
+
+.story {
+  margin-top: 20px;
+  line-height: 1.6;
+  background-color: pink;
+}
+
+.illustration {
+  border: 2px dashed #ccc;
+  max-height: 300px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: pink;
+}
+
+img {
+  width: auto;
+  /* or any size you want */
+  max-height: 300px;
+  /* keeps the aspect ratio */
+  max-width: 100%;
+  /* height: auto; */
+  display: block;
+  margin: 0.5rem auto;
+
+}
+
+nav {
+  margin-top: 10px;
+  width: auto;
+}
+
+nav a {
+  color: #b22222;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.nav-buttons a {
+  padding: 0.1rem 1rem;
+  background: #e63946;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* Side-by-side on larger screens */
+@media (min-width: 600px) {
+  .nav-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+pre {
+  background-color: pink;
+  color: #b22222;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Base font size for desktop/tablet */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('your-background.jpg');
+  background-size: cover;
+  /* fill the screen */
+  background-position: center;
+  /* center the image */
+  background-attachment: fixed;
+  /* prevents scrolling */
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  /* prevent body scroll */
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.sidebar {
+  width: 100%;
+  /* or any width you want */
+  /* optional */
+  height: 100vh;
+  /* full height */
+  overflow-y: auto;
+  /* scrolls independently */
+  background: rgba(255, 255, 255, 0.8);
+  /* optional: readable overlay */
+  box-sizing: border-box;
+}
+
+
+/* Larger text on small screens (phones) */
+@media (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.column-wrapper {
+  height: 90vh;
+  /* 90% of viewport height */
+  overflow-y: auto;
+  /* vertical scroll */
+  padding-right: 10px;
+  /* optional: avoids content touching scrollbar */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* space between boxes */
+  max-width: 20%;
+  /* optional */
+  margin: 0 auto;
+}
+
+ .box {
+    background: pink;
+    color: red;
+    margin-bottom: 16px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+.scrolltext {
+  height: 50vh;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+/* .box {
+  border: 1px solid #ccc;
+  padding: 12px;
+  background: #f9f9f9;
+  text-align: center;
+} */
+
+/* .box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+} */
+
+.box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+
+@media (max-width: 450px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
