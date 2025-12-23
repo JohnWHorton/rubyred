@@ -6,11 +6,16 @@ html {
 
 body {
   margin: 0;
-  padding: 1rem;
-  line-height: 1.6;
-  background-color: pink;
-  font-family: "Arial", sans-serif;
-
+  padding: 0;
+  background-image: url('your-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -128,8 +133,15 @@ h2 {
   }
 }
 
+.scrolltext {
+  height: 50vh;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
 pre {
   background-color: pink;
+  height: 50vh;
   color: #b22222;
   padding: 10px;
   border: 1px solid #ccc;
@@ -137,26 +149,8 @@ pre {
   font-family: "Georgia", serif;
   font-size: 20px;
   white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/* Base font size for desktop/tablet */
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('your-background.jpg');
-  background-size: cover;
-  /* fill the screen */
-  background-position: center;
-  /* center the image */
-  background-attachment: fixed;
-  /* prevents scrolling */
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-  /* prevent body scroll */
-  font-family: sans-serif;
-  font-size: 16px;
+  word-wrap: break-word;  
+  overflow-y: auto;
 }
 
 .sidebar {
@@ -220,25 +214,6 @@ body {
     height: auto;
     margin-bottom: 8px;
   }
-
-.scrolltext {
-  height: 50vh;
-  overflow-y: auto;
-  padding-bottom: 20px;
-}
-/* .box {
-  border: 1px solid #ccc;
-  padding: 12px;
-  background: #f9f9f9;
-  text-align: center;
-} */
-
-/* .box img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  display: block;
-} */
 
 .box p {
   margin: 0;

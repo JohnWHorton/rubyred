@@ -1,4 +1,4 @@
- 
+
 var rubyRedChapters = [
     {},
     {
@@ -253,6 +253,8 @@ function loadChapter(id) {
     document.getElementById("chapter-image").innerHTML = chapter.image;
     document.getElementById("storytext").innerHTML = chapter.storytext;
 
+    // Update the text
+
     if (id == 1) {
         var navbtns = `<a href="index.html">Back to Index</a> |
     <a href="#" onclick="`+ chapter.next + `">` + chapter.nextdesc + `</a>`;
@@ -265,7 +267,10 @@ function loadChapter(id) {
     }
 
     document.getElementById("navbtns").innerHTML = navbtns;
+
+    document.querySelector('pre').scrollTop = 0;
 }
+
 
 function speakText() {
     const text = document.getElementById("storytext").innerText;
