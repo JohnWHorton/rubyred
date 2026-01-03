@@ -41,7 +41,7 @@ The train rattled on, stopping at station after station. The man stayed in his s
 When the train finally reached her stop in Brooklyn, Red hopped off quickly, blending into the crowd. She glanced back once. The man in the suit had also stepped off the train. He was following, though at a distance.
 
 Red’s heart thumped. She pulled up her hood like a cape and hurried toward Grandma’s bookshop.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(1)",
         nextdesc: "Next Chapter",
         next: "loadChapter(3)"
@@ -67,7 +67,7 @@ He smiled politely. “Good evening. What a wonderful shop you have here. May I 
 Grandma, always welcoming, nodded. “Of course. Feel free to look around. We love curious readers.”
 
 Ruby tugged at her hoodie. She didn’t like the way his eyes flicked around the shop, especially toward the glass case. She whispered to herself, Stay sharp, Ruby. Something isn’t right.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(2)",
         nextdesc: "Next Chapter",
         next: "loadChapter(4)"
@@ -91,7 +91,7 @@ Wolfe circled closer, pretending to tie his shoe near the case. His hand brushed
 The shop was quiet, except for the sound of Wolfe’s footsteps. 
 
 Ruby knew he wasn’t here for stories—he was here for something else.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(3)",
         nextdesc: "Next Chapter",
         next: "loadChapter(5)"
@@ -116,7 +116,7 @@ Ruby knew she had to act. She slipped her phone out of her pocket and held it lo
 She hit send and tucked her phone away.
 
 Now it was a waiting game. Ruby’s eyes stayed sharp, her hoodie pulled tight. She was ready.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(4)",
         nextdesc: "Next Chapter",
         next: "loadChapter(6)"
@@ -141,7 +141,7 @@ Ruby pretended to read her comic, but her eyes stayed locked on his reflection i
 The shop was quiet, the air heavy with suspense. Ruby’s clever plan was in motion. 
 
 Help was on the way.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(5)",
         nextdesc: "Next Chapter",
         next: "loadChapter(7)"
@@ -168,7 +168,7 @@ Ruby pulled her hood up like a cape and stepped forward. “Or were you just pre
 The neighbors looked at Wolfe, their eyes sharp. He shifted uncomfortably, realizing he was surrounded.
 
 The cozy bookshop didn’t feel quiet anymore. It felt strong, like a fortress filled with friends.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(6)",
         nextdesc: "Next Chapter",
         next: "loadChapter(8)"
@@ -198,7 +198,7 @@ Ruby felt her heart slow down. The danger was over. Wolfe had been caught, and t
 
 Grandma smiled proudly at her granddaughter. “You were brave, Ruby. You saw through his disguise.”
 Ruby grinned. “And we stopped him together."`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(7)",
         nextdesc: "Next Chapter",
         next: "loadChapter(9)"
@@ -222,7 +222,7 @@ The train rattled on, stopping at station after station. The man stayed in his s
 When the train finally reached her stop in Brooklyn, Red hopped off quickly, blending into the crowd. She glanced back once. The man in the suit had also stepped off the train. He was following, though at a distance.
 
 Red’s heart thumped. She pulled up her hood like a cape and hurried toward Grandma’s bookshop.`,
-        previousdesc: "Previous",
+        previousdesc: "Previous chapter",
         previous: "loadChapter(8)",
         nextdesc: "Next Chapter",
         next: "loadChapter(0)"
@@ -259,7 +259,7 @@ function loadChapter(id) {
         var navbtns = `<a href="index.html">Back to Index</a> |
     <a href="#" onclick="`+ chapter.next + `">` + chapter.nextdesc + `</a>`;
     } else if (id == 9) {
-        var navbtns = `<a href="#" onclick="` + chapter.next + `">` + chapter.nextdesc + `</a> |
+        var navbtns = `<a href="#" onclick="` + chapter.previous + `">` + chapter.previousdesc + `</a> |
             <a href="index.html">Back to Index</a>`;
     } else {
         var navbtns = `<a href="#" onclick="` + chapter.previous + `">` + chapter.previousdesc + `</a> |
