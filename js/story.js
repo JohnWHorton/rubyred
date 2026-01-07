@@ -1,6 +1,6 @@
+/* branch master*/
 
-var rubyRedChapters = [
-    {},
+var storyChapters = [
     {
         id: 1,
         title: "Chapter 1: Ruby’s Red Hoodie",
@@ -227,11 +227,10 @@ Red’s heart thumped. She pulled up her hood like a cape and hurried toward Gra
         nextdesc: "Next Chapter",
         next: "loadChapter(0)"
     },
-    {}
 ];
 
 var id = getParameter("id");
-var chapter = rubyRedChapters[id];
+// var chapter = storyChapters[id - 1];
 
 function getParameter(id) {
     let params = new URLSearchParams(window.location.search);
@@ -245,7 +244,7 @@ function loadChapter(id) {
         speechSynthesis.cancel();
     }
 
-    var chapter = rubyRedChapters[id];
+    var chapter = storyChapters[id - 1];
 
     //   if (!chapter) return;
 
@@ -258,7 +257,7 @@ function loadChapter(id) {
     if (id == 1) {
         var navbtns = `<a href="index.html">Back to Index</a> |
     <a href="#" onclick="`+ chapter.next + `">` + chapter.nextdesc + `</a>`;
-    } else if (id == 9) {
+    } else if (id == storyChapters.length) {
         var navbtns = `<a href="#" onclick="` + chapter.previous + `">` + chapter.previousdesc + `</a> |
             <a href="index.html">Back to Index</a>`;
     } else {
@@ -279,18 +278,15 @@ function speakText() {
 
     // Voice style settings
     utterance.pitch = 1.3;      // slightly higher pitch
-    utterance.rate = 0.9;       // slower, gentle pacing
+    utterance.rate = 0.8;       // slower, gentle pacing
     utterance.volume = 0.9;     // softer volume
 
     // Optional: choose a specific voice if available
     const voices = speechSynthesis.getVoices();
     const gentleVoice = voices.find(v =>
-        v.name.toLowerCase().includes("child") ||
-        v.name.toLowerCase().includes("girl") ||
-        v.name.toLowerCase().includes("young")
+        v.name.toLowerCase().includes("“Google UK English Male”")
     );
-
-    utterance.voice = gentleVoice;
-
+    utterance.voice = gentleVoice || voices[0];
     speechSynthesis.speak(utterance);
 }
+
