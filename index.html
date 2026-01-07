@@ -10,15 +10,15 @@
 </head>
 
 <body class="mybg">
-    <button id="toggleBtn" onclick='menubtn.style.display = "block";toggleBtn.style.display = "none"'>Show/Hide</button>
+    <button id="toggleBtn" onclick='makeMenu(); menubtn.style.display = "block";toggleBtn.style.display = "none"'>Show/Hide</button>
 
     <div id="menubtn" class="menu" style="display: none;">
         <h1>Little Red in Brooklyn</h1>
         <p>Choose a chapter to begin the adventure:</p>
 
         <!-- <ul style="color: red"> -->
-        <div class="sidebar">
-            <div class="box">
+        <div id="themenu" class="sidebar">
+            <!-- <div class="box">
                 <a href="chapter.html?id=1">
                     <div class="box">
                         <img src="./images/chapter1.png" alt="Ruby’s Red Hoodie">
@@ -91,88 +91,6 @@
                 </a>
             </div>
             <div class="box">
-            </div>
-
-            <!-- Add as many boxes as you want — sidebar will scroll -->
-        </div>
-        </div>
-
-</body>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth's Halloween</title>
-    <!-- <link rel="stylesheet" href="css/styles.css" type="text/css"> -->
-</head>
-
-<body class="mybg">
-    <div class="menu">
-        <h1>Elizabeth's Halloween surprise</h1>
-        <p>Choose a chapter to begin the adventure:</p>
-
-        <!-- <ul style="color: red"> -->
-        <div class="sidebar">
-            <div class="box">
-                <a href="chapter.html?id=1">
-                    <div class="box">
-                        <img src="./images/chapter1.png" alt="Lizzie">
-                        <p>Chapter 1: Halloween</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="chapter.html?id=2">
-                    <div class="box">
-                        <img src="./images/chapter2.png" alt="Spooky Walk">
-                        <p>Chapter 2: Elizabeth’s Spooky Walk</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="chapter.html?id=3">
-                    <div class="box">
-                        <img src="./images/chapter3.png" alt="Restless Sleep">
-                        <p>Chapter 3: Elizabeth’s Restless Sleep</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="chapter.html?id=4">
-                    <div class="box">
-                        <img src="./images/chapter4.png" alt="The Glow">
-                        <p>Chapter 4: The Glow in Elizabeth’s Room</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="chapter.html?id=5">
-                    <div class="box">
-                        <img src="./images/chapter5.png" alt="The Fairy’s Warning">
-                        <p>Chapter 5: The Fairy’s Warning</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="chapter.html?id=6">
-                    <div class="box">
-                        <img src="./images/chapter6.png" alt="Gremlin Hunt">
-                        <p>Chapter 6: Elizabeth and the Gremlin Hunt</p>
-                    </div>
-                </a>
-            </div>
-            <div class="box">
-                <a href="chapter.html?id=7">
-                    <div class="box">
-                        <img src="./images/chapter7.png" alt="Back to bed">
-                        <p>Chapter 7: Back to bed</p>
-                    </div>
-                </a>
-            </div>
-            <!-- <div class="box">
             </div> -->
 
             <!-- Add as many boxes as you want — sidebar will scroll -->

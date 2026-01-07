@@ -1,4 +1,4 @@
-/* branch master*/
+/* branch main*/
 
 var storyChapters = [
     {
@@ -289,4 +289,21 @@ function speakText() {
     utterance.voice = gentleVoice || voices[0];
     speechSynthesis.speak(utterance);
 }
+function makeMenu() {
+    var m = "";
+    for (var i = 0; i <= storyChapters.length - 1; i++) {
+        var chapter = storyChapters[i];
+        var title = chapter.title;
+        m = m +
+            `<div class="box">
+                <a href="chapter.html?id=`+ (i + 1) + `">
+                    <div class="box">
+                        <img src="./images/chapter`+ (i + 1) + `.png" alt="Ruby’s Red Hoodie">
+                        <p>Chapter `+ (i + 1) + `: ` + title + `</p>
+                    </div>
+                </a>
+            </div>`;
+    }
+    document.getElementById("themenu").innerHTML = m;
 
+}
