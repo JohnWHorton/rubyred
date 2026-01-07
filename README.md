@@ -1,2 +1,2 @@
-# lizzieshalloween
-a short story about Lizzie
+# Little Red in Brooklyn
+a short story about Little Red
