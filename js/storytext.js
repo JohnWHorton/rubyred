@@ -3,7 +3,7 @@ var storyname = "Little Red in Brooklyn";
 var storyChapters = [
     {
         id: 1,
-        title: "Chapter 1: Ruby’s Red Hoodie",
+        title: "Ruby’s Red Hoodie",
         image: '<img src="images/chapter1.png" alt="Ruby in her red hoodie">',
         storytext: `Ruby Carter was twelve years old, and everyone called her Red. It wasn’t just because of her bright fiery hair, it was because of the hoodie she wore every single day. The hoodie was soft, cozy, and the color of a ripe apple. Red loved it so much that she felt braver whenever she pulled the hood up, like a superhero putting on her cape.
 
@@ -24,7 +24,7 @@ She loved visiting Grandma’s bookshop in Brooklyn..`,
     },
     {
         id: 2,
-        title: "Chapter 2: The Subway Ride",
+        title: "The Subway Ride",
         image: '<img src="images/chapter2.png" alt="Ruby on the subway">',
         storytext: `Ruby zipped up her red hoodie and hurried down the steps to the subway. The air smelled of pretzels and roasted peanuts from the street vendors above. She tapped her MetroCard, pushed through the turnstile, and joined the crowd waiting on the platform.
 The train screeched to a stop, doors sliding open. Red squeezed inside, clutching her backpack. She found a seat near the window and pulled out her comic book. The subway rattled and roared as it sped through the tunnels.
@@ -48,7 +48,7 @@ Red’s heart thumped. She pulled up her hood like a cape and hurried toward Gra
     },
     {
         id: 3,
-        title: "Chapter 3: The Cozy Bookshop",
+        title: "The Cozy Bookshop",
         image: '<img src="images/chapter3.png" alt="The Cozy Bookshop">',
         storytext: `Ruby hurried down the busy Brooklyn street, her red hoodie glowing under the streetlights. She felt safer the moment she saw the familiar sign swinging above the door: Carter’s Bookshop.
 
@@ -74,7 +74,7 @@ Ruby tugged at her hoodie. She didn’t like the way his eyes flicked around the
     },
     {
         id: 4,
-        title: "Chapter 4: A Polite Customer",
+        title: "A Polite Customer",
         image: '<img src="images/chapter4.png" alt="A Polite Customer">',
         storytext: `Mr. Wolfgang Wolfe strolled slowly through Grandma’s bookshop, his shiny shoes clicking softly on the wooden floor. He smiled as if he were just another customer, but Ruby kept her eyes on him.
 
@@ -98,7 +98,7 @@ Ruby knew he wasn’t here for stories—he was here for something else.`,
     },
     {
         id: 5,
-        title: "Chapter 5: Red’s Suspicion",
+        title: "Red’s Suspicion",
         image: '<img src="images/chapter5.png" alt="Red’s Suspicion">',
         storytext: `Ruby sat at the reading table, her comic book open in front of her. But she wasn’t really reading. Her eyes kept flicking toward the tall man in the suit.
 Mr. Wolfe pretended to browse, pulling books from the shelves and flipping through them quickly. He smiled whenever Grandma glanced his way, but Ruby noticed something important—he never actually read a single page. His eyes were always drifting back to the glass case in the middle of the shop.
@@ -123,7 +123,7 @@ Now it was a waiting game. Ruby’s eyes stayed sharp, her hoodie pulled tight. 
     },
     {
         id: 6,
-        title: "Chapter 6: The Clever Plan",
+        title: "The Clever Plan",
         image: '<img src="images/chapter6.png" alt="The Clever Plan">',
         storytext: `Ruby’s heart thumped as she watched Mr. Wolfe circle closer to the glass case. He bent down again, pretending to tie his shoe, but this time she saw something glint in his hand—a tiny tool, like a pick.
 
@@ -148,7 +148,7 @@ Help was on the way.`,
     },
     {
         id: 7,
-        title: "Chapter 7: The Community Arrives",
+        title: "The Community Arrives",
         image: '<img src="images/chapter7.png" alt="The Community Arrives">',
         storytext: `The shop was quiet except for the soft creak of the floorboards as Mr. Wolfe circled closer to the glass case. Ruby’s heart pounded. She knew help was on the way, but would it arrive in time?
 
@@ -175,7 +175,7 @@ The cozy bookshop didn’t feel quiet anymore. It felt strong, like a fortress f
     },
     {
         id: 8,
-        title: "Chapter 8: The Wolf is Caught",
+        title: "The Wolf is Caught",
         image: '<img src="images/chapter8.png" alt="The Wolf is Caught">',
         storytext: `Mr. Wolfe’s sly smile faded as more neighbors stepped into the shop. The cozy little bookstore suddenly felt crowded, and all eyes were on him.
 He tried to laugh it off. “Ah, such a popular place! I was only browsing, of course.”
@@ -205,7 +205,7 @@ Ruby grinned. “And we stopped him together."`,
     },
     {
         id: 9,
-        title: "Chapter 9: Hot Chocolate Victory",
+        title: "Hot Chocolate Victory",
         image: '<img src="images/chapter9.png" alt="Hot Chocolate Victory">',
         storytext: `Ruby zipped up her red hoodie and hurried down the steps to the subway. The air smelled of pretzels and roasted peanuts from the street vendors above. She tapped her MetroCard, pushed through the turnstile, and joined the crowd waiting on the platform.
 The train screeched to a stop, doors sliding open. Red squeezed inside, clutching her backpack. She found a seat near the window and pulled out her comic book. The subway rattled and roared as it sped through the tunnels.

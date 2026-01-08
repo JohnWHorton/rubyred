@@ -1,5 +1,7 @@
 /* branch main*/
 
+var utterance;
+
 var id = getParameter("id");
 // var chapter = storyChapters[id - 1];
 
@@ -45,7 +47,7 @@ function loadChapter(id) {
 function speakText() {
     const text = document.getElementById("storytext").innerText;
 
-    const utterance = new SpeechSynthesisUtterance(text);
+    utterance = new SpeechSynthesisUtterance(text);
 
     // Voice style settings
     utterance.pitch = 1.3;      // slightly higher pitch
@@ -59,6 +61,16 @@ function speakText() {
     );
     utterance.voice = gentleVoice || voices[0];
     speechSynthesis.speak(utterance);
+}
+function pauseText() {
+
+    speechSynthesis.pause(utterance);
+
+}
+function resumeText() {
+
+    speechSynthesis.resume(utterance);
+
 }
 function makeMenu() {
     var m = "";
