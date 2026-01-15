@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A short story</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/stylesmob.css" type="text/css">
 </head>
 
 <body class="scrolltext">
@@ -17,10 +18,22 @@
     </div>
 
     <div class="story">
-        <button class="readbtn" onclick="speakText()">Read the story</button>
+        <!-- <button class="readbtn" onclick="speakText()">Read the story</button>
         <button class="readbtn" onclick="pauseText()">Pause</button>
-        <button class="readbtn" onclick="resumeText()">Resume</button>
+        <button class="readbtn" onclick="resumeText()">Resume</button> -->
         <nav id="navbtns"></nav>
+        <div class="player">
+            <audio id="audio"></audio>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+
+            <label>
+                Volume
+                <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+            </label>
+        </div>
+
         <div>
             <pre id="storytext"></pre>
         </div>

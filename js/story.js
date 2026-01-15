@@ -1,6 +1,7 @@
 /* branch main*/
 
-var utterance;
+// var speechSynthesis;
+var soundfile 
 
 var id = getParameter("id");
 // var chapter = storyChapters[id - 1];
@@ -13,10 +14,18 @@ function getParameter(id) {
 }
 function loadChapter(id) {
 
-    if (speechSynthesis) {
-        speechSynthesis.cancel();
+    // if (speechSynthesis) {
+    //     speechSynthesis.cancel();
+    // }
+    const audio = document.getElementById("audio");
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
     }
 
+    if (id == null) {
+        return;
+    }
     var chapter = storyChapters[id - 1];
 
     //   if (!chapter) return;
@@ -26,7 +35,11 @@ function loadChapter(id) {
     document.getElementById("storytext").innerHTML = chapter.storytext;
 
     // Update the text
-
+    
+    if(id) {
+        // a = document.getElementById("audio").innerHTML = "./sound/chapter" + id + ".mp3";
+        audio.src = "./sound/chapter" + id + ".mp3";
+    }
     if (id == 1) {
         var navbtns = `<a href="index.html">Back to Index</a> |
     <a href="#" onclick="`+ chapter.next + `">` + chapter.nextdesc + `</a>`;
@@ -43,35 +56,68 @@ function loadChapter(id) {
     document.querySelector('pre').scrollTop = 0;
 }
 
+// Global cached promise so you never wait twice
+// let voicesReady = null;
 
-function speakText() {
-    const text = document.getElementById("storytext").innerText;
+// function loadVoices() {
+//     if (voicesReady) return voicesReady;
 
-    utterance = new SpeechSynthesisUtterance(text);
+//     voicesReady = new Promise(resolve => {
+//         const voices = speechSynthesis.getVoices();
 
-    // Voice style settings
-    utterance.pitch = 1.3;      // slightly higher pitch
-    utterance.rate = 0.8;       // slower, gentle pacing
-    utterance.volume = 0.9;     // softer volume
+//         // If voices already loaded, resolve immediately
+//         if (voices.length > 0) {
+//             resolve(voices);
+//             return;
+//         }
 
-    // Optional: choose a specific voice if available
-    const voices = speechSynthesis.getVoices();
-    const gentleVoice = voices.find(v =>
-        v.name.toLowerCase().includes("“Google UK English Male”")
-    );
-    utterance.voice = gentleVoice || voices[0];
-    speechSynthesis.speak(utterance);
-}
-function pauseText() {
+//         // Otherwise wait for the event (fires once)
+//         speechSynthesis.addEventListener(
+//             "voiceschanged",
+//             () => resolve(speechSynthesis.getVoices()),
+//             { once: true }
+//         );
+//     });
 
-    speechSynthesis.pause(utterance);
+//     return voicesReady;
+// }
 
-}
-function resumeText() {
+// let utterance = null;
 
-    speechSynthesis.resume(utterance);
+// async function speakText() {
 
-}
+//     let voiceName = "Google UK English Male";
+//     const voices = await loadVoices();
+
+//     const voice = voices.find(v => v.name === voiceName) || voices[0];
+
+//     const text = document.getElementById("storytext").innerText;
+
+//     utterance = new SpeechSynthesisUtterance(text);
+
+//     utterance.voice = voice;
+//     utterance.pitch = 1.3;      // slightly higher pitch
+//     utterance.rate = 0.8;       // slower, gentle pacing
+//     utterance.volume = 0.9;     // softer volume
+
+//     speechSynthesis.speak(utterance);
+// }
+// function pauseText() {
+//     if (speechSynthesis.speaking && !speechSynthesis.paused) {
+//         speechSynthesis.pause();
+//     }
+// }
+
+// function resumeText() {
+//     if (speechSynthesis.paused) {
+//         speechSynthesis.resume();
+//     }
+// }
+
+// function stopText() {
+//     speechSynthesis.cancel();
+// }
+
 function makeMenu() {
     var m = "";
     for (var i = 0; i <= storyChapters.length - 1; i++) {
@@ -91,3 +137,31 @@ function makeMenu() {
     document.getElementById("storyname").innerText = storyname;
 
 }
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play');
+const pauseBtn = document.getElementById('pause');
+const stopBtn = document.getElementById('stop');
+const volumeSlider = document.getElementById('volume');
+
+playBtn.addEventListener('click', () => {
+    audio.play();
+});
+
+pauseBtn.addEventListener('click', () => {
+    audio.pause();
+});
+
+stopBtn.addEventListener('click', () => {
+    audio.pause();
+    audio.currentTime = 0;
+});
+
+volumeSlider.addEventListener('input', () => {
+    audio.volume = volumeSlider.value;
+});
+
+
+// Reset button text when audio ends
+audio.addEventListener('ended', () => {
+    playPauseBtn.textContent = 'Play';
+});

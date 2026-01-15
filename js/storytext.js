@@ -207,21 +207,9 @@ Ruby grinned. “And we stopped him together."`,
         id: 9,
         title: "Hot Chocolate Victory",
         image: '<img src="images/chapter9.png" alt="Hot Chocolate Victory">',
-        storytext: `Ruby zipped up her red hoodie and hurried down the steps to the subway. The air smelled of pretzels and roasted peanuts from the street vendors above. She tapped her MetroCard, pushed through the turnstile, and joined the crowd waiting on the platform.
-The train screeched to a stop, doors sliding open. Red squeezed inside, clutching her backpack. She found a seat near the window and pulled out her comic book. The subway rattled and roared as it sped through the tunnels.
-
-Across the car sat a tall man in a sharp gray suit. His shoes were shiny, and his smile looked polite—but his eyes seemed to sparkle in a way that made Red uneasy. He watched the passengers carefully, as if he were searching for something.
-
-Red tugged her hood tighter. She remembered her mom’s words: Stick to the main route. Don’t talk to strangers.
-The man leaned forward slightly, noticing her hoodie.
-
-“Nice color,” he said smoothly. “You look like someone who knows about treasures.”
-Red kept her eyes on her comic and pretended not to hear. She wasn’t about to start a conversation with a stranger.
-The train rattled on, stopping at station after station. The man stayed in his seat, glancing at Red now and then. She felt a shiver run down her spine. Something about him didn’t feel right.
-
-When the train finally reached her stop in Brooklyn, Red hopped off quickly, blending into the crowd. She glanced back once. The man in the suit had also stepped off the train. He was following, though at a distance.
-
-Red’s heart thumped. She pulled up her hood like a cape and hurried toward Grandma’s bookshop.`,
+        storytext: `Ruby and Grandma sit together at the bookstore table, steam curling from their mugs. Ruby’s cheeks are still flushed from the adventure, Grandma’s shawl smells faintly of lavender and woodsmoke. Outside, the last echo of Mr Wolfe’s footsteps has faded into the past. Inside, everything is safe again.
+Ruby takes a sip of hot chocolate — extra marshmallows, because Grandma says bravery deserves sweetness — and Grandma gives her that proud, quiet smile that says I knew you could do it. The storm of the day softens into a warm glow.
+`,
         previousdesc: "Previous chapter",
         previous: "loadChapter(8)",
         nextdesc: "Next Chapter",
