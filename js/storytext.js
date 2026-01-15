@@ -207,8 +207,24 @@ Ruby grinned. “And we stopped him together."`,
         id: 9,
         title: "Hot Chocolate Victory",
         image: '<img src="images/chapter9.png" alt="Hot Chocolate Victory">',
-        storytext: `Ruby and Grandma sit together at the bookstore table, steam curling from their mugs. Ruby’s cheeks are still flushed from the adventure, Grandma’s shawl smells faintly of lavender and woodsmoke. Outside, the last echo of Mr Wolfe’s footsteps has faded into the past. Inside, everything is safe again.
-Ruby takes a sip of hot chocolate — extra marshmallows, because Grandma says bravery deserves sweetness — and Grandma gives her that proud, quiet smile that says I knew you could do it. The storm of the day softens into a warm glow.
+        storytext: `The bookshop was quiet again after all the excitement. The neighbors had gone home, Officer Daniels had escorted Mr. Wolfe away, and the glass case stood safe and secure in the middle of the shop.
+
+Ruby sank into the big armchair by the window, pulling her red hoodie tight around her shoulders. Grandma brought over two steaming mugs of hot chocolate, the marshmallows melting into soft clouds on top.
+
+“You were brave tonight, Ruby,” Grandma said, handing her a mug. “You saw through his disguise when others might have been fooled.”
+
+Ruby grinned, sipping the sweet cocoa. “I just paid attention. He wasn’t really reading—he only wanted the book.”
+
+Grandma chuckled. “That’s true. But it takes courage to speak up, and you did.”
+
+Ruby looked around the shop. The shelves seemed to glow in the warm light, filled with stories that would never be stolen. She felt proud, not just because she had helped, but because she had protected something important.
+
+“Guess we make a good team,” Ruby said.
+
+“The best,” Grandma agreed, clinking her mug gently against Ruby’s.
+
+Outside, the city bustled on, but inside the bookshop everything felt safe and magical. Ruby knew she would always remember this night—the night she became the hero of her own story.
+
 `,
         previousdesc: "Previous chapter",
         previous: "loadChapter(8)",
